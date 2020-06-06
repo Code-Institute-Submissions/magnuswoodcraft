@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/cerulean/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Magnus Woodcraft</title>
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-sm fixed-top justify-content-center">
+<ul class="navbar-nav justify-content-center container-fluid">
+<li><a class="nav-link" href="home.html">Home</a></li>
+<li> <a class="nav-link" href="about.html">About</a></li>
+<li><a class="nav-link" href="gallery.html" target="_blank">Projects</a></li>
+<li><a class="nav-link" href="order.html" target="_blank">Order</a></li>
+</ul>
+</nav>
+</header>
+
+
+<section id="form">
+<div id="order-image" class="container-fluid">
+<h5>Complete the order form below:</h5>
+<img class="form-image justify-content-center container-fluid" src="https://i.imgur.com/zHFn85F.jpg">
+<div id="order-form" class="container col-6">
+<form class="content-justify-center container-fluid" action="/action_page.php">
+<label for="name">Name: </label>
+<input type="text" class="form-control" placeholder="Enter Name" id="name">
+<label for="email">Email address:</label>
+  <input type="email" class="form-control" placeholder="Enter email" id="email">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-light">Submit</button>
+</form>
+<div class="form-group">
+  <label for="comment">What would you like to order?:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+<label for="file">Have you found something similar?</label>
+<input type="file" class="form-control-file border" id="file">
+</div>
+</div>
+</section>
+
+
+<footer>
+<div class="container-fluid">
+<ul class="media justify-content-center container-fluid">
+<li><a class="link" href="https:www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+<li><a class="link" href="https:www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li> 
+<li><a class ="link" href="https:www.outlook.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+<li><a class ="link" href="https:www.snapchat.com" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li> 
+</ul>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

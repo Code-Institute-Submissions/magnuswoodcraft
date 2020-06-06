@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Girassol:700|Libre+Baskerville:300|Muli:300&display=swap');
+
+body {
+font-family: 'Libre Baskerville', serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Girassol', cursive;
+color:#c3a343;
+}
+
+h1 {
+    font-family: 'Girassol', cursive;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+
+#logo {
+      background: url("https://i.imgur.com/Wz6ecGa.jpg") no-repeat center center;
+   height: 150px;
+   width: 100%;
+   position: relative;
+    font-family: 'Girassol', cursive;
+    float: left;
+    font-size: 300%;
+    color: #000000;
+    margin-top: 0px;
+    border: block 5px #000000;
+    margin-bottom: 0px;
+    line-height: 75px;
+    margin-left: 30px;
+    
+}
+
+.hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+background: url("https://i.imgur.com/vxUqtFk.jpg") no-repeat center center;
+height: 600px;
+width: 100%;
+background-size: auto;
+position: absolute;
+}
+
+h2 {
+        color:#000000;
+        padding-top: 30px;
+        font-family:'Dancing Script', cursive;
+        text-align: center;
+        font-size: 200%;
+        font-weight: 200%;
+}
+
+h3 {
+    color: #c3a343;
+    padding: bottom;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+.image-text {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Girassol'. cursive;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 50% auto;
+    margin: 0 auto;
+
+    background-color: rgba(0, 0, 10, 0.4);
+    background-size: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    height: 80% auto;
+}
+
+*/ fix navigation so it is horizontal*/
+
+#menu {
+font-size: 110%;
+font-family: 'Muli', sans-serif;
+list-style-type: none;
+letter-spacing: 4px;
+color: #000000;
+overflow: hidden;
+}
+
+#menu li {
+    color: #000000;
+    display: inline;
+    word-spacing: 20px;
+    margin-left: 50px;  
+    float: none;
+}
+    #menu a {
+text-decoration: none;
+color: #000000;
+    top:50%;
+    left:50%;
+    transform: (-50%,-50%);
+    display: block;
+    margin: 1px solid #000000;
+ 
+    }
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#about {
+    height: 600px;
+}
+#about h2 {
+    padding: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#left {
+    padding: 10px;
+    width: 33%;
+    background-color: rgba(221, 172, 37, 0.2);
+    height: 300px;
+    float: left;
+     font-family: 'Dancing Script', cursive;
+     list-style-type: none;
+     margin-left: 10px;
+}
+
+#left li {
+    color: #000000;
+    float: left;
+}
+
+.left-about {
+    float: right;
+    margin: 10px;
+    width:40%;
+    line-height: 75px;
+    clear:both;
+    margin-top:50px;
+}
+#right {
+    background: url("https://i.imgur.com/luOQmGB.jpg?1") no-repeat center center;
+    padding: 1px;
+    width: 33%;
+    height: 280px;
+    border-radius: 8px;
+    line-height: 75px;
+    object-fit: cover;
+    float: right;
+    margin-right: 10px;
+    background-color: rgba(0,0,0, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+#top {
+    width: 80%;
+    position: relative;
+    margin-left: 50px;
+}
+#top p {
+font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+#bottom {
+    width: 80%;
+    position: relative;;
+    margin-left: 50px;
+    padding-bottom: 0px;
+    bottom: 10px;
+    padding-top:300px;
+
+}
+
+#bottom h3 {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    color: #000000;
+}
+#bottom p {
+font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 50px;
+    color: #000000;
+    margin: 20px;
+    padding-bottom: 0px;
+    bottom: 10px;
+    position: relative;
+}
+
+#bottom li {
+    list-style-type: none;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Dancing Script', cursive;
+}
