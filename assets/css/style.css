@@ -1,46 +1,191 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700|Girassol:700|Libre+Baskerville:300|Muli:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP&family=UnifrakturMaguntia&display=swap');
+
+/* All fonts taken from Google fonts*/
+
+header {
+padding-bottom: 50px;
+position: fixed;
+}
+
+/* Used this code from .... to ensure sections below navbar did not overlap ^^*/
 
 body {
-font-family: 'Libre Baskerville', serif;
-font-family: 'Muli', sans-serif;
 font-family: 'Dancing Script', cursive;
-font-family: 'Girassol', cursive;
-color:#c3a343;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'UnifrakturMaguntia', cursive;
 }
+
+/* this code was taken from tutorials on Google Fonts on code institute */
+
+/* Enter page is used to give an extra bit of experience to myself in building websites and to challenge my understanding
+I took this idea from w3schools.com, the section on Bootstrap buttons*/
+
+#enter h1 {
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-size: 6vw;
+letter-spacing: 3px;
+color: #000000;
+padding-top: 30px 0px;
+}
+
+#enter .col {
+padding-top: 0px;
+}
+
+#enter .img-fluid {
+width: 100%;
+position: relative;
+height: auto;
+
+animation-name: enter-zoom;
+animation-duration: 7s;
+animation-fill-mode: both;
+}
+
+/*I took the animation idea from the css hero-image animation tutorial from code institute. I altered some of the parameters for the animation to better suit the page*/
+
+@keyframes enter-zoom {
+from{
+transform: scale(1);
+}
+to{
+transform: scale(1.05);
+}
+}
+
+#enter .btn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+color: #c3a343;
+font-size: 20px;
+padding: 12px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+font-family: 'UnifrakturMaguntia', cursive;
+box-shadow: 0 4px 8px 0 rgba(0, 7, 0, 0.699), 0 6px 20px 0 rgba(47, 56, 42, 0.671);
+max-width: 200px;
+}
+
+#enter .btn:hover {
+color: #c3a343;
+font-family: 'Dancing Script', cursive;
+box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.699), 0 6px 20px 0 rgba(245, 241, 15, 0.671);
+}
+
+@media screen and (max-width: 767px) { #enter h1 {
+font-size: 39px;
+}
+
+#enter .btn {
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+color: #c3a343;
+font-size: 15px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+font-family: 'UnifrakturMaguntia', cursive;
+box-shadow: 0 4px 8px 0 rgba(0, 7, 0, 0.699), 0 6px 20px 0 rgba(47, 56, 42, 0.671);
+}
+}
+
+@media screen and (min-width: 1025PX) { #enter .btn
+{
+font-size: 40px;
+}
+}
+
+/* Enter page code ends*/
+
+/* Navbar code starts */
+
+/* code taken from....*/
+
+header {
+margin-bottom: 20px;
+position: relative;
+padding: 5px;
+}
+
+.navbar-nav {
+background-color:#ffffff;
+width: 100%;
+height: 100px;
+position: fixed;
+padding-top: 30px;
+line-height: 15px;
+}
+
+.nav-link { 
+padding: 7px;
+margin-top: 10px;
+border: 1px solid #000000;  
+background-color: rgba(221, 172, 37, 0.3);
+color: black;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-decoration: none;
+margin-left: 10px;
+width: 100% auto;
+font-size: 150%;
+align-content: center;
+}
+
+.nav-link:hover {
+color: #c3a343;    
+}
+
+/*I decided to adjust the width of the whole nav bar link section and the spaces between the navigational buttons by using the media query
+min/max widths below. These media query response widths were taken from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 user gokulkrishh*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+.navbar-nav
+{
+align-content: center;
+position: fixed;
+width: 100%;
+height: 100px;
+}
+ 
+.nav-link
+{
+margin-left: 8px;
+font-size: 20px;
+}
+}
+
+/*https://stackoverflow.com/questions/4455021/freeze-navbar-at-top-of-page took instruction from this website from user Dstarh8*/
+/* end of navigation bar code */
+
+/* hero image and hero text */
 
 h1 {
-    font-family: 'Girassol', cursive;
-    text-align: center;
-    font-size: 100px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #000000;
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-size: 100px;
+letter-spacing: 3px;
+color: #000000;
 }
 
-
-#logo {
-      background: url("https://i.imgur.com/Wz6ecGa.jpg") no-repeat center center;
-   height: 150px;
-   width: 100%;
-   position: relative;
-    font-family: 'Girassol', cursive;
-    float: left;
-    font-size: 300%;
-    color: #000000;
-    margin-top: 0px;
-    border: block 5px #000000;
-    margin-bottom: 0px;
-    line-height: 75px;
-    margin-left: 30px;
-    
-}
 
 .hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+height: 600px;
+width: 100%;
+overflow: hidden;
+position: relative;
+border: 1px solid black;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-top: 30px;
+margin-bottom: 30px;
 }
+
 
 .hero-image {
 background: url("https://i.imgur.com/vxUqtFk.jpg") no-repeat center center;
@@ -48,164 +193,900 @@ height: 600px;
 width: 100%;
 background-size: auto;
 position: absolute;
+
+
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
 }
 
-h2 {
-        color:#000000;
-        padding-top: 30px;
-        font-family:'Dancing Script', cursive;
-        text-align: center;
-        font-size: 200%;
-        font-weight: 200%;
+@keyframes hero-zoom {
+from {
+transform: scale(1);
+    }
+to {
+transform: scale(1.1);
 }
-
-h3 {
-    color: #c3a343;
-    padding: bottom;
-    font-family: 'Dancing Script', cursive;
-
-
 }
 
 .image-text {
-    text-align: center;
-    font-size: 200%;
-    font-family: 'Girassol'. cursive;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    width: 50% auto;
-    margin: 0 auto;
-
-    background-color: rgba(0, 0, 10, 0.4);
-    background-size: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
-    height: 80% auto;
-}
-
-*/ fix navigation so it is horizontal*/
-
-#menu {
-font-size: 110%;
-font-family: 'Muli', sans-serif;
-list-style-type: none;
 letter-spacing: 4px;
-color: #000000;
-overflow: hidden;
+width: 50% auto;
+background-size: cover;
+padding: 0px 0px 20px 0px;
+position: relative;
+height: 250px;
 }
 
-#menu li {
-    color: #000000;
-    display: inline;
-    word-spacing: 20px;
-    margin-left: 50px;  
-    float: none;
+.image-text h2 {
+color:#000000;
+padding-top: 50px;
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-weight: 200%;
+font-size: 10vw;
+text-shadow: 2px 2px 2px #ffffff;
+text-transform: capitalize;
+letter-spacing: 6px;
 }
-    #menu a {
-text-decoration: none;
-color: #000000;
-    top:50%;
-    left:50%;
-    transform: (-50%,-50%);
-    display: block;
-    margin: 1px solid #000000;
- 
-    }
 
-#menu, #logo {
-    line-height: 75px;
+/*I added this media query between these widths as the heading on the hero image seemed too out of proportion*/
+@media (min-width: 768px) and (max-width: 1024px) { .image-text h2
+{
+font-size: 100px;
+}
+}
+
+.logo-image {
+background: url("https://i.imgur.com/ZPkb3ZH.png?1") no-repeat center center;
+height: 250px;
+width: 250px;
+background-color: rgba(253, 253, 253, 0.4);
+border: black solid 1px;
+border-radius: 50%;
+position: relative;
+top: 32%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 720PX) { .logo-image
+{
+width: 200px;
+height: 200px;
+background-size: contain;
+position: absolute;
+top: 73%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+.hero-image .hero-outer
+{
+height: 450px;
+width: 100%
+}
+
+.hero-outer
+{
+height: 450px;
+width: 100%
+}
+
+.image-text h2
+{
+font-size: 70px;
+padding-top: 50px;
+}
+}
+
+@media screen and (max-width: 480PX) { .logo-image
+{
+width: 180px;
+height: 180px;
+background-size: contain;
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+
+.image-text h2
+{
+font-size: 60px;
+padding-top: 30px;
+}
+}
+
+/*I took inspiration from the club-ethos section of the code institute CSS3 tutorial.*/
+
+#about {
+height: 600px;
+position: relative;
+border: 1px solid black;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+line-height: 5px;
+padding-top: 20px;
+background-color: white;
+padding-bottom: 20px;
+}
+
+#about h2 {
+font-family: 'UnifrakturMaguntia', cursive;
+font-size: 7vw;
+text-align: center;
+color: #000000;
+text-decoration: underline;
+padding-bottom: 10px;
+}
+
+/*https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+
+#left {
+float: left;
+background-color: rgba(221, 172, 37, 0.2);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+height: auto;
+width: 30%;
+margin-left: 10px;
+border: 1px #c3a343 solid;
+}
+
+
+#left-heading h2 {
+font-family: 'UnifrakturMaguntia', cursive;
+font-size: 30px;
+text-align: center;
+color: #c3a343; 
+padding-top: 20px;
+line-height: 20px;
+margin-left: 5px;
+}
+
+#left-heading p {
+margin-left: 5px;
+font-size: 25px;
+color: #000000;
+font-family: 'Dancing Script', cursive;
+line-height: 30px;
+text-align: center;
+}
+
+#center {
+margin: auto;
+float: none;
+width: 30%;
+padding-top: 60px;
+left: 50%;
+padding-right: 20px;
+}
+
+#circle-container {
+width: 230px;
+height: 230px;
+padding: 5px;
+border: 1px #c3a343 solid;
+border-radius: 50%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#circle {
+background: url("https://i.imgur.com/luOQmGB.jpg?2") no-repeat center center;
+border-radius: 50%;
+height: 100%;
+}
+
+#right {
+float: right;
+height: auto;
+width: 30%;
+margin-right: 10px;
+background-color: rgba(221, 172, 37, 0.2);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border: 1px #c3a343 solid;
+}
+
+#right-heading h2 {
+font-family: 'UnifrakturMaguntia', cursive;
+font-size: 30px;
+color: #c3a343; 
+padding-top: 20px;
+line-height: 20px;
+margin-right: 10px;
+text-align: center;
+}
+
+#right-heading p {
+font-size: 25px;
+color: #000000;
+font-family: 'Dancing Script', cursive;
+line-height: 30px;
+text-align: center;
+padding: 5px;
+}
+
+
+@media screen and (max-width: 767px){ #left {
+padding: 0;
+height: auto;
+background-color: white;
+width: 90%;
+margin-bottom: 10px;
+margin-left: 5%;
+}
+
+#right {
+    padding: 0;
+height: auto;
+background-color: white;
+width: 90%;
+margin-bottom: 10px;
+margin-right: 5%;
 }
 
 #about {
-    height: 600px;
+    height: auto;
 }
 #about h2 {
-    padding: 15px;
-    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
 }
-
-#left {
-    padding: 10px;
-    width: 33%;
-    background-color: rgba(221, 172, 37, 0.2);
-    height: 300px;
-    float: left;
-     font-family: 'Dancing Script', cursive;
-     list-style-type: none;
-     margin-left: 10px;
-}
-
-#left li {
-    color: #000000;
-    float: left;
-}
-
-.left-about {
-    float: right;
-    margin: 10px;
-    width:40%;
-    line-height: 75px;
-    clear:both;
-    margin-top:50px;
-}
-#right {
-    background: url("https://i.imgur.com/luOQmGB.jpg?1") no-repeat center center;
-    padding: 1px;
-    width: 33%;
-    height: 280px;
-    border-radius: 8px;
-    line-height: 75px;
-    object-fit: cover;
-    float: right;
-    margin-right: 10px;
-    background-color: rgba(0,0,0, 0.7);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#center{
+    clear: both;
+    width:  90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    height: 200px;
+    padding-top: 0px;
     }
+    
 
-#top {
-    width: 80%;
-    position: relative;
-    margin-left: 50px;
+    #circle-container {
+        height: 200px;
+        width: 200px;
+        top: 0%;
+        position: relative;
+         }
+
+    #left-heading h2 {
+        text-align: center;
+    }
 }
-#top p {
-font-family: 'Dancing Script', cursive;
-    font-size: 20px;
-    color: #000000;
-    text-align: center;
-    margin: 20px;
+
+@media screen and (min-width: 1025PX) { #left, #right
+{
+    width: 90%;
+    float: left;
+    padding: 0px;
+    margin-top: 10px;
+     margin-left: 5%;
+background-color: rgba(255, 255, 255, 0.5);
+}
+#center{
+    width: 100%;
+    clear: both;
+    top: 0%;
+    height: 400px;
+}
+#left-heading h2, #right-heading h2 {
+    font-size: 60px;
+    padding: 50px;
+    color: black;
     padding-bottom: 20px;
 }
-#bottom {
-    width: 80%;
-    position: relative;;
-    margin-left: 50px;
-    padding-bottom: 0px;
-    bottom: 10px;
-    padding-top:300px;
-
+#left-heading p, #right-heading p {
+    padding: 20px;
+    font-size: 40px;
+}
+#about{
+     height: auto;
+     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/1W2dWIl.jpg") no-repeat center center;
+     padding-bottom: 0;
+}
 }
 
-#bottom h3 {
-    padding-top: 20px;
-    text-align: center;
-    position: relative;
-    color: #000000;
+#middle {
+position: relative;
+border: 1px solid black;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+align-content: center;
+margin-top: 20px;
+background-color: white;
 }
-#bottom p {
+
+#middle .row {
+position: relative;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 10px;
+margin: 10px;
+background-color: white;
+border: 1px #c3a343 solid;
+}
+
+#middle img {
+height: 350px auto;
+margin-top: 20px;
+padding: 5px;
+background-size: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border: 1px #c3a343 solid;
+
+animation-name: middle-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes middle-zoom {
+    from{
+transform: scale(1);
+    }
+     to{
+transform: scale(1.04);
+     }
+}
+
+#middle h2 {
+font-family: 'UnifrakturMaguntia', cursive;
+font-size: 6vw;
+text-align: center;
+color: #000000;
+padding-top: 20px;
+text-decoration: underline;
+}
+
+
+.caption p {
+text-align: center;
+font-size: 100%;
+text-decoration: none;
+padding-top: 10px;
+}
+
+.caption a {
+text-decoration: none;
+color: #c3a343;
+}
+
+.caption a:hover {
+color: #c3a343;
+}
+
+
+/* code for the footer */
+/*footer ccs was inspired by the footer from the css3 projects tutorial from the css3 fundamentals module by code insitute. I wanted to keep the footer simple but easy to understand and follow*/
+
+footer {
+height: 100px;
+position: relative;
+bottom: 0;
+}
+
+footer h2 {
+font-size: 200%;
+}
+
+.media {
+text-align: center;
+}
+
+.media ul {
+display: inline-block;
+}
+
+.media li {
+display: inline-block;
+}
+
+.media i {
+width: 100% auto;
+text-decoration: none;
+margin-left: 20px;
+list-style-type: none;
+color:#c3a343;
+font-size: 200%;
+display: inline-block;
+text-align: center;
+line-height: 75px;
+padding: 5px;
+}
+
+
+/*footer code ends*/
+
+/*This section codes for two carousels on the about and projects.html pages, so I grouped them together*/
+/*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp was used to establish the bootstrap coding for the carousel*/
+
+#carousel {
+position: relative;
+color: black;
+font-size: 200%;
+background-color: #ffffff;     
+}
+
+.carousel-inner {
+margin-top: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border: 2px solid #c3a343;
+position: relative;
+padding: 10px;
+background-size: cover;
+}
+
+.carousel-caption {
+background-color: rgba(0, 0, 10, 0.7);
+width: 30%;
+margin-left: 20%;
+}
+
+.carousel-caption h4 {
+color: #ffffff;
+font-size: 24px;
+padding: 5px;
+line-height: 20px;
+}
+
+/*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp ....https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
+/*https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/. By web developer George Martsouko.*/
+
+/*this codes for the text on the about.html page*/
+
+.about-us {
+height: auto;
+position: relative;
+border: 1px #c3a343 solid;
+margin-top: 80px;
+padding-bottom: 50px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+.about-us h2 {
+padding-top: 20px;
+font-size:6vw;
+text-align: center;
+color: #000000;
+border-bottom: #c3a343 1px solid;
+width: 50%;
+margin-left: 25%;
+}
+
+.about-us h5 {
+padding: 10px;
+margin-top: 10px;
 font-family: 'Dancing Script', cursive;
-    text-align: center;
-    margin-top: 50px;
-    color: #000000;
-    margin: 20px;
-    padding-bottom: 0px;
-    bottom: 10px;
-    position: relative;
+font-size: 3vw;
 }
 
-#bottom li {
-    list-style-type: none;
-    text-align: center;
-    letter-spacing: 3px;
-    font-family: 'Dancing Script', cursive;
+.about-vikings h5 {
+padding-top: 20px;
 }
+
+#carousel-viking {
+position: relative;
+color: black;
+font-size: 200%;
+background-color: #ffffff;     
+}
+
+/*I was having trouble finding images of equal size so I altered them to be the same with code from https://stackoverflow.com/questions/17357306/bootstrap-carousel-resizing-image by user AndrewLi*/
+
+#carousel-viking .carousel-item img {
+width: auto;
+height: auto;
+}
+
+/* these media queries code for the text elements on the page only as the bootstrap4 carousels are already fully responsive*/
+/* this section of css codes for screens above 1025px, so will be presented on the desktop*/
+
+@media screen and (min-width: 1025PX) { .about-us h2
+{
+font-size: 5vw;
+border-bottom: #c3a343 solid 1px;
+width: 50%;
+margin-left: 25%;  
+}
+
+.about-us h5 {
+font-size: 4vw;
+text-align: center;
+padding-bottom: 10px;
+padding: 10px;  
+}
+
+.carousel-caption h4 {
+width: 50% auto center;
+font-size: 2vw;
+text-align: center;
+}
+}
+
+/* this section codes for the mobile media query*/
+
+@media screen and (max-width: 480PX) { .about-us h2 
+{
+font-size: 7vw;
+border-bottom: #c3a343 solid 1px;
+width: 50%;
+margin-left: 25%;
+}
+
+.about-us h5 
+{
+font-size: 5vw;
+text-align: center;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.carousel-caption h4
+{
+font-size: 18px;
+text-align: center;        
+ width: 30% auto center;
+}
+}
+
+/* this section codes for projects.html content only*/
+
+#project-info {
+height: auto;
+position: relative;
+border: 1px #c3a343 solid;
+padding: 20px 0px;
+margin-top: 70px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+#project-info-text {
+height: auto;
+background-color: white;
+margin: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border: 1px solid #c3a343;
+background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/vxUqtFk.jpg") no-repeat center center;
+}
+/*Linear gradient of this hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+#project-info ul li {
+list-style-type: none;
+}
+
+#project-info h2 {
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-size: 5vw;
+letter-spacing: 3px;
+color: #000000;
+padding: 10px;
+text-decoration: underline;
+}
+
+#project-info h4 {
+padding-bottom: 10px;
+margin-top: 10px;
+font-size: 4vw;
+color: black;
+text-decoration: underline;
+text-align: center;
+}
+
+
+#project-info p {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+#carousel-project {
+position: relative;
+color: black;
+font-size: 200%;
+background-color: #ffffff;     
+}
+
+
+#carousel-project .carousel-caption h4 {
+color: #ffffff;
+font-size: 24px;
+padding: 5px;
+line-height: 30px;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) { #carousel-project .carousel-caption h4 {
+    font-size:4vw;
+}
+}
+
+/* projects page code ends*/
+
+
+
+/* Order page code for order.html, this page was meant to add depth to the project and would allow customers to place an order
+a file submission option is included so customers can submit their own ideas*/
+
+#order-image {
+position: relative;
+background: url("https://i.imgur.com/5StpnWY.jpg") no-repeat center center;
+height: 800px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+animation-name: order-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+
+
+/*same key frame used for all order background images*/
+
+@keyframes order-zoom {
+    from{
+transform: scale(1);
+    }
+     to{
+transform: scale(1.04);
+     }
+}
+
+
+#order-form {
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+align-content: center;
+height: 450px;
+width: 75%;
+}
+
+.container {
+position: absolute;
+}
+
+h5 {
+color: #000000;
+font-size: 6vw;
+text-align: center;
+padding-top: 50px;
+padding-bottom: 20px;
+}
+
+label {
+font-size: 30px;
+color: white;
+padding-top: 20px;
+}
+
+#form {
+padding-top: 20px; 
+}
+
+#order-form button {
+margin-top: 30px;
+margin-left: 10%;
+}
+
+#order-form-button .btn {
+min-width: 150px;
+}
+
+.form-group {
+margin-bottom: 10px;
+margin-top: 20px;
+}
+
+/* this section codes for desktop resonse for the order fom page, anything below 1024px will go to the default code above*/
+
+
+
+@media screen and (min-width: 1025PX) { #order-image
+    {
+background: url("https://i.imgur.com/yDldFtr.jpg") no-repeat center center;
+position: relative;
+height: 1000px;
+background-size: auto;
+align-content: center;
+
+animation-name: order-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+
+#order-form {
+position: absolute;
+top: 25%;left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+align-content: center;
+height: 450px;
+width: 70%;
+}
+
+label {
+font-size: 36px;
+color: white;
+ padding-top: 10px;
+}
+
+button .btn {
+margin-top: 30px;
+margin-left: 300%;
+min-width: 250px;
+}
+
+.form-group {
+margin-bottom: 20px;
+margin-top: 20px;
+}
+}
+
+/* this section codes for mobile response on the order form page*/
+
+@media screen and (max-width: 480PX) { #order-image
+    {
+background: url("https://i.imgur.com/L3oQSXu.jpg") no-repeat center center;
+position: relative;
+height: 800px;
+background-size: auto;
+align-content: center;
+
+animation-name: order-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+
+
+#order-form {
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+align-content: center;
+height: 450px;
+width: 100%;
+}
+
+
+label {
+font-size: 20px;
+color: white;
+}
+
+    
+h5 {
+padding-top: 30px;
+}
+
+.form-group{
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.btn {
+min-width: 80px;
+}
+}
+
+/* https://www.w3schools.com/bootstrap4/bootstrap_forms.asp */
+
+/*This section codes for the thank.html page, this page exists solely for the submission button on the order.html page
+I was unsure how to make a php action response work for this so i improvised with a html file*/
+
+.thank {
+padding-top: 0px;
+height: auto;
+}
+
+.thank img {
+width: 100%;
+position: relative;
+
+animation-name: thank-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes thank-zoom {
+    from{
+transform: scale(1);
+    }
+     to{
+transform: scale(1.04);
+     }
+}
+
+
+/* the positioning code for this div was originally position to suit resolutions between 768 and 1025px, the below media
+quireys adjust the elements to suit phones and desktops*/
+
+.img-thank-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+align-content: center;
+width: 60%;
+height: auto;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+}
+
+.img-thank-text h1 {
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-size: 5vw;
+letter-spacing: 3px;
+color: #c3a343;
+padding-top: 10px;
+text-shadow: 2px 2px 2px #ffffff;
+}
+
+.img-thank-text h4 {
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-size: 4vw;
+letter-spacing: 3px;
+color: #c3a343;
+text-shadow: 1px 1px 1px #ffffff;
+}
+
+.img-thank-text h5 {
+font-size: 3vw;
+color: #ffffff;
+letter-spacing: 3px;
+}
+
+/*these media querys respond to desktop resolution sizes*/
+
+@media screen and (min-width: 1025PX) { .img-thank-text {
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+align-content: center;
+width: 80%;
+height: auto;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+}
+}
+
+/*Here I use a wide range of media quries to cover all smart phones and low resoluation tablets*/
+
+@media (min-width: 320px) and (max-width: 767px) { .img-thank-text h1
+    {
+font-family: 'UnifrakturMaguntia', cursive;
+text-align: center;
+font-size: 20px;
+letter-spacing: 3px;
+color: #c3a343;
+padding-top: 10px;
+text-shadow: 1px 1px 1px #ffffff;
+}
+
+.img-thank-text {
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%); 
+align-content: center;
+width: 80%;
+height: auto;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 10px;
+}
+
+.img-thank-text h5 {
+font-size: 15px;
+}
+}
+
+
