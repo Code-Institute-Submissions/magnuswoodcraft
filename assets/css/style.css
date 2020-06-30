@@ -615,16 +615,14 @@ background-size: cover;
 }
 
 .carousel-caption {
-background-color: rgba(0, 0, 10, 0.7);
-width: 30%;
-margin-left: 20%;
+background-color: rgba(0, 0, 10, 0.3);
+width: auto;
+height: auto;
 }
 
 .carousel-caption h4 {
 color: #ffffff;
-font-size: 24px;
-padding: 5px;
-line-height: 20px;
+font-size: 30px;
 }
 
 /*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp ....https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
@@ -653,10 +651,10 @@ margin-left: 25%;
 }
 
 .about-us h5 {
-padding: 10px;
+padding: 15px;
 margin-top: 10px;
 font-family: 'Dancing Script', cursive;
-font-size: 3vw;
+font-size: 5vw;
 }
 
 .about-vikings h5 {
@@ -696,15 +694,14 @@ padding: 10px;
 }
 
 .carousel-caption h4 {
-width: 50% auto center;
-font-size: 2vw;
+font-size: 30px;
 text-align: center;
 }
 }
 
 /* this section codes for the mobile media query*/
 
-@media screen and (max-width: 480PX) { .about-us h2 
+@media (min-width: 320px) and (max-width: 767px) { .about-us h2 
 {
 font-size: 7vw;
 border-bottom: #c3a343 solid 1px;
@@ -714,7 +711,7 @@ margin-left: 25%;
 
 .about-us h5 
 {
-font-size: 5vw;
+font-size: 20px;
 text-align: center;
 padding-bottom: 10px;
 padding-top: 10px;
@@ -722,9 +719,14 @@ padding-top: 10px;
 
 .carousel-caption h4
 {
-font-size: 18px;
-text-align: center;        
- width: 30% auto center;
+font-size: 4vw;
+text-align: center;
+padding: 0;        
+}
+.carousel-caption {
+background-color: rgba(0, 0, 10, 0.3);
+width: auto;
+height: auto;
 }
 }
 
@@ -748,12 +750,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border: 1px solid #c3a343;
 background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/vxUqtFk.jpg") no-repeat center center;
 }
+
 /*Linear gradient of this hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 #project-info ul li {
 list-style-type: none;
 }
 
-#project-info h2 {
+#project-info-text h2 {
 font-family: 'UnifrakturMaguntia', cursive;
 text-align: center;
 font-size: 5vw;
@@ -761,22 +764,28 @@ letter-spacing: 3px;
 color: #000000;
 padding: 10px;
 text-decoration: underline;
+background-color: rgba(255, 255, 255, 0.3);
 }
 
-#project-info h4 {
+#project-info-text h4 {
 padding-bottom: 10px;
 margin-top: 10px;
-font-size: 4vw;
 color: black;
 text-decoration: underline;
-text-align: center;
+font-size: 5vw;
+background-color: rgba(255, 255, 255, 0.1) center;
 }
 
 
 #project-info p {
-    text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: 4vw;
+    padding: 10px;
+ background-color: rgba(255, 255, 255, 0.1) center; 
+}
+
+#project-info p i {
+    font-size: 15px;
 }
 
 #carousel-project {
@@ -799,7 +808,6 @@ line-height: 30px;
     font-size:4vw;
 }
 }
-
 /* projects page code ends*/
 
 
