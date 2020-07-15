@@ -26,7 +26,7 @@ text-align: center;
 font-size: 6vw;
 letter-spacing: 3px;
 color: #000000;
-padding-top: 30px 0px;
+padding-top: 30px;
 }
 
 #enter .col {
@@ -59,7 +59,6 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
 color: #c3a343;
 font-size: 20px;
 padding: 12px;
@@ -86,7 +85,6 @@ position: absolute;
 top: 45%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
 color: #c3a343;
 font-size: 15px;
 border: none;
@@ -133,7 +131,6 @@ color: black;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 text-decoration: none;
 margin-left: 10px;
-width: 100% auto;
 font-size: 150%;
 align-content: center;
 }
@@ -211,8 +208,6 @@ transform: scale(1.1);
 
 .image-text {
 letter-spacing: 4px;
-width: 50% auto;
-background-size: cover;
 padding: 0px 0px 20px 0px;
 position: relative;
 height: 250px;
@@ -223,7 +218,7 @@ color:#000000;
 padding-top: 50px;
 font-family: 'UnifrakturMaguntia', cursive;
 text-align: center;
-font-weight: 200%;
+font-weight: 200;
 font-size: 10vw;
 text-shadow: 2px 2px 2px #ffffff;
 text-transform: capitalize;
@@ -248,7 +243,6 @@ position: relative;
 top: 32%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 720PX) { .logo-image
@@ -260,7 +254,6 @@ position: absolute;
 top: 73%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
 }
 
 .hero-image .hero-outer
@@ -291,7 +284,6 @@ position: absolute;
 top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
 }
 
 .image-text h2
@@ -506,7 +498,6 @@ border: 1px #c3a343 solid;
 }
 
 #middle img {
-height: 350px auto;
 margin-top: 20px;
 padding: 5px;
 background-size: auto;
@@ -580,7 +571,6 @@ display: inline-block;
 }
 
 .media i {
-width: 100% auto;
 text-decoration: none;
 margin-left: 20px;
 list-style-type: none;
@@ -773,7 +763,7 @@ margin-top: 10px;
 color: black;
 text-decoration: underline;
 font-size: 5vw;
-background-color: rgba(255, 255, 255, 0.1) center;
+
 }
 
 
@@ -781,7 +771,6 @@ background-color: rgba(255, 255, 255, 0.1) center;
     color: black;
     font-size: 4vw;
     padding: 10px;
- background-color: rgba(255, 255, 255, 0.1) center; 
 }
 
 #project-info p i {
@@ -845,7 +834,6 @@ position: absolute;
 top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%); 
 align-content: center;
 height: 450px;
 width: 75%;
@@ -908,7 +896,6 @@ animation-fill-mode: forwards;
 position: absolute;
 top: 25%;left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%); 
 align-content: center;
 height: 450px;
 width: 70%;
@@ -953,7 +940,6 @@ position: absolute;
 top: 30%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%); 
 align-content: center;
 height: 450px;
 width: 100%;
@@ -1017,7 +1003,6 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%); 
 align-content: center;
 width: 60%;
 height: auto;
@@ -1057,7 +1042,6 @@ position: absolute;
 top: 60%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%); 
 align-content: center;
 width: 80%;
 height: auto;
@@ -1084,7 +1068,6 @@ position: absolute;
 top: 35%;
 left: 50%;
 transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%); 
 align-content: center;
 width: 80%;
 height: auto;
