@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP&family=UnifrakturMaguntia&display=swap');
-
+/* this code was taken from tutorials on Google Fonts on code institute */
 /*All media bootstrap containers, rows and columns instructed by https://www.w3schools.com/bootstrap/default.asp, all images taken from Pixabay*/
 /* All fonts taken from Google fonts*/
-/*https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php*/
+/* citation .caption https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php*/
 header {
 padding-bottom: 50px;
 position: fixed;
 }
 
 /* Used this code from to ensure sections below navbar did not overlap ^^*/
-
+/* this code was taken from tutorials on Google Fonts on code institute */
 body {
 font-family: 'Dancing Script', cursive;
 font-family: 'Noto Sans JP', sans-serif;
 font-family: 'UnifrakturMaguntia', cursive;
 }
-
-/* this code was taken from tutorials on Google Fonts on code institute */
 
 /* Enter page is used to give an extra bit of experience to myself in building websites and to challenge my understanding
 I took this idea from w3schools.com, the section on Bootstrap buttons*/
@@ -38,14 +36,13 @@ padding-top: 0px;
 width: 100%;
 position: relative;
 height: auto;
-
+/*I took the animation idea from the css hero-image animation tutorial from code institute. I altered some of the parameters for the animation to better suit the page*/
 animation-name: enter-zoom;
 animation-duration: 7s;
 animation-fill-mode: both;
 }
 
 /*I took the animation idea from the css hero-image animation tutorial from code institute. I altered some of the parameters for the animation to better suit the page*/
-
 @keyframes enter-zoom {
 from{
 transform: scale(1);
@@ -54,11 +51,12 @@ to{
 transform: scale(1.05);
 }
 }
-
+/*all button code and ideas taken from, rest of code is improvised from my own knowledge https://www.w3schools.com/bootstrap/bootstrap_buttons.asp*/
 #enter .btn {
 position: absolute;
 top: 50%;
 left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 color: #c3a343;
 font-size: 20px;
@@ -85,6 +83,7 @@ font-size: 39px;
 position: absolute;
 top: 45%;
 left: 50%;
+/*the position of all transform elements on the code were taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user name Salim and improvised*/
 transform: translate(-50%, -50%);
 color: #c3a343;
 font-size: 15px;
@@ -172,7 +171,7 @@ letter-spacing: 3px;
 color: #000000;
 }
 
-
+/* hero image and hero text inspired by the css3 web project by code institute*/
 .hero-outer {
 height: 600px;
 width: 100%;
@@ -192,7 +191,7 @@ width: 100%;
 background-size: auto;
 position: absolute;
 
-
+/* hero image and hero zoom taken from the css3 web project by code institute*/
 animation-name: hero-zoom;
 animation-duration: 5s;
 animation-fill-mode: forwards;
@@ -206,7 +205,7 @@ to {
 transform: scale(1.1);
 }
 }
-
+/* image text inspired by the css3 web project by code institute*/
 .image-text {
 letter-spacing: 4px;
 padding: 0px 0px 20px 0px;
@@ -233,6 +232,7 @@ font-size: 100px;
 }
 }
 
+/*this logo designed by hand and was placed using coding techniques from the above sources, code institute, https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 .logo-image {
 background: url("https://i.imgur.com/ZPkb3ZH.png?1") no-repeat center center;
 height: 250px;
@@ -245,7 +245,7 @@ top: 32%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
-
+/* code inspired by the css3 web project by code institute*/
 @media screen and (max-width: 720PX) { .logo-image
 {
 width: 200px;
@@ -275,7 +275,7 @@ font-size: 70px;
 padding-top: 50px;
 }
 }
-
+/* image text inspired by the css3 web project by code institute*/
 @media screen and (max-width: 480PX) { .logo-image
 {
 width: 180px;
@@ -294,8 +294,7 @@ padding-top: 30px;
 }
 }
 
-/*I took inspiration from the club-ethos section of the code institute CSS3 tutorial.*/
-
+/*I took inspiration from the club-ethos section of the code institute CSS3 tutorial, the divs were made through trial and error.*/
 #about {
 height: 600px;
 position: relative;
@@ -328,7 +327,7 @@ margin-left: 10px;
 border: 1px #c3a343 solid;
 }
 
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #left-heading h2 {
 font-family: 'UnifrakturMaguntia', cursive;
 font-size: 30px;
@@ -338,7 +337,7 @@ padding-top: 20px;
 line-height: 20px;
 margin-left: 5px;
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #left-heading p {
 margin-left: 5px;
 font-size: 25px;
@@ -347,7 +346,7 @@ font-family: 'Dancing Script', cursive;
 line-height: 30px;
 text-align: center;
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #center {
 margin: auto;
 float: none;
@@ -356,7 +355,7 @@ padding-top: 60px;
 left: 50%;
 padding-right: 20px;
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #circle-container {
 width: 230px;
 height: 230px;
@@ -365,13 +364,13 @@ border: 1px #c3a343 solid;
 border-radius: 50%;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #circle {
 background: url("https://i.imgur.com/luOQmGB.jpg?2") no-repeat center center;
 border-radius: 50%;
 height: 100%;
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #right {
 float: right;
 height: auto;
@@ -381,7 +380,7 @@ background-color: rgba(221, 172, 37, 0.2);
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border: 1px #c3a343 solid;
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #right-heading h2 {
 font-family: 'UnifrakturMaguntia', cursive;
 font-size: 30px;
@@ -391,7 +390,7 @@ line-height: 20px;
 margin-right: 10px;
 text-align: center;
 }
-
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #right-heading p {
 font-size: 25px;
 color: #000000;
@@ -400,7 +399,6 @@ line-height: 30px;
 text-align: center;
 padding: 5px;
 }
-
 
 @media screen and (max-width: 767px){ #left {
 padding: 0;
@@ -475,11 +473,12 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 #about{
      height: auto;
+     /*Linear gradient of this hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
      background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/1W2dWIl.jpg") no-repeat center center;
      padding-bottom: 0;
 }
 }
-/*alot of the code in this section was taken from https://www.w3schools.com/bootstrap/bootstrap_images.asp */
+/*alot of the code in this section was taken from https://www.w3schools.com/bootstrap/bootstrap_images.asp, my own images and decoration were added by me */
 #middle {
 position: relative;
 border: 1px solid black;
@@ -547,7 +546,7 @@ color: #c3a343;
 
 
 /* code for the footer */
-/*footer ccs was inspired by the footer from the css3 projects tutorial from the css3 fundamentals module by code insitute. I wanted to keep the footer simple but easy to understand and follow*/
+/*footer ccs was inspired by the footer from the css3 projects tutorial from the css3 fundamentals module by code insitute. I wanted to keep the footer simple but easy to understand and follow, icons for the social media links were taken from font awesome*/
 
 footer {
 height: 100px;
@@ -588,14 +587,14 @@ padding: 5px;
 
 /*This section codes for two carousels on the about and projects.html pages, so I grouped them together*/
 /*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp was used to establish the bootstrap coding for the carousel*/
-
+/*https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/. By web developer George Martsouko was used to manipuate the position of the carousel to my liking.*/
 #carousel {
 position: relative;
 color: black;
 font-size: 200%;
 background-color: #ffffff;     
 }
-
+/*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp was used to establish the bootstrap coding for the carousel*/
 .carousel-inner {
 margin-top: 20px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -604,7 +603,7 @@ position: relative;
 padding: 10px;
 background-size: cover;
 }
-
+/*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp was used to establish the bootstrap coding for the carousel*/
 .carousel-caption {
 background-color: rgba(0, 0, 10, 0.3);
 width: auto;
@@ -616,10 +615,10 @@ color: #ffffff;
 font-size: 30px;
 }
 
-/*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp ....https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
-/*https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/. By web developer George Martsouko.*/
+/* code taken from https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp  and https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488*/
+/*more code taken from https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/. By web developer George Martsouko.*/
 
-/*this codes for the text on the about.html page*/
+/*this codes for the text on the about.html page, this is all my own code*/
 
 .about-us {
 height: auto;
@@ -651,7 +650,7 @@ font-size: 5vw;
 .about-vikings h5 {
 padding-top: 20px;
 }
-
+/*https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp was used to establish the bootstrap coding for the carousel*/
 #carousel-viking {
 position: relative;
 color: black;
@@ -721,7 +720,7 @@ height: auto;
 }
 }
 
-/* this section codes for projects.html content only*/
+/* this section codes for projects.html content only all code is mine except the respected carousel code*/
 
 #project-info {
 height: auto;
@@ -739,10 +738,11 @@ background-color: white;
 margin: 20px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border: 1px solid #c3a343;
+/*Linear gradient of this hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/vxUqtFk.jpg?1") no-repeat center center;
 }
 
-/*Linear gradient of this hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+
 #project-info ul li {
 list-style-type: none;
 }
@@ -834,6 +834,7 @@ transform: scale(1.04);
 position: absolute;
 top: 30%;
 left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 align-content: center;
 height: 450px;
@@ -896,6 +897,7 @@ animation-fill-mode: forwards;
 #order-form {
 position: absolute;
 top: 25%;left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 align-content: center;
 height: 450px;
@@ -940,6 +942,7 @@ animation-fill-mode: forwards;
 position: absolute;
 top: 30%;
 left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 align-content: center;
 height: 450px;
@@ -1003,6 +1006,7 @@ quireys adjust the elements to suit phones and desktops*/
 position: absolute;
 top: 50%;
 left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 align-content: center;
 width: 60%;
@@ -1042,6 +1046,7 @@ letter-spacing: 3px;
 position: absolute;
 top: 60%;
 left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 align-content: center;
 width: 80%;
@@ -1068,6 +1073,7 @@ text-shadow: 1px 1px 1px #ffffff;
 position: absolute;
 top: 35%;
 left: 50%;
+/*this code was taken from https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen user Salim*/
 transform: translate(-50%, -50%);
 align-content: center;
 width: 80%;
