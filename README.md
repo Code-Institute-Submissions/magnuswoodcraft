@@ -1,4 +1,4 @@
-<h1><b><u>Magnus Woodcraft</b></u></h1>
+#Magnus Woodcraft#
 
 <h4>Magnus Woodcraft is a rustic-modern and unique website that was designed to give the user an obvious idea as to what the business is about. This business aims to produce, unique
 aesthetic designs, inspired by centuries-old wood-crafting techniques. I decided to design this website as my partner is setting up a carpentry business and I wanted to help him design his website.
