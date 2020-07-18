@@ -58,13 +58,8 @@ Languages used: **HTML5 and CSS3**
 * [GitHub](http://github.com) was used to store the code after it was pushed from GitPod using Git.
 ## Testing
 
-W3C CSS Validator - 
+[W3C CSS Validator - complete](http://jigsaw.w3.org/css-validator/images/vcss-blue.png)
 
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="Valid CSS!" />
-    </a>
 
 
 ### First Time Visitor Goals
@@ -121,7 +116,9 @@ Also, the form will only be submitted when all fields are filled in appropriatel
 5. Order form: The order form on the order.html page submits to the thank.html page only when all text fields have their respective information.
 6. Tested on all screen sizes, samsung galaxy s10, desktop and tablet.
 
-* **Unfixed Bugs:** The social media links do not seem to work on the open server, and the social media pages for this company do not exist yet.
+* **Unfixed Bugs:** 
+1. The social media links do not seem to work on the open server, and the social media pages for this company do not exist yet.
+2. Sometimes the page needs to be refreshed to get the navbar to stick.
 
 ## Deployment
 
