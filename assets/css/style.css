@@ -2,13 +2,13 @@
 
 /*All media bootstrap containers, rows and columns instructed by https://www.w3schools.com/bootstrap/default.asp, all images taken from Pixabay*/
 /* All fonts taken from Google fonts*/
-
+/*https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php*/
 header {
 padding-bottom: 50px;
 position: fixed;
 }
 
-/* Used this code from .... to ensure sections below navbar did not overlap ^^*/
+/* Used this code from to ensure sections below navbar did not overlap ^^*/
 
 body {
 font-family: 'Dancing Script', cursive;
