@@ -131,10 +131,16 @@ Also, the form will only be submitted when all fields are filled in appropriatel
 5. The live URL was then presented after the page refreshed.
 
 ## Credits
-* Code: Special reference to those that allowed for easy application of the carousels and their respective images. [Sitepoint creator - George Martsoukos](http://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/)
-* Content: All content was written by the developer.
-* Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free.
-* Achknowledgments: To my mentor, code institute and my family for allowing this to be an enjoyable process.
+* Code: Special reference to those that allowed for easy application of the carousels and their respective images. [Sitepoint creator - George Martsoukos](http://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/). Other code references and achknowledgements are listed in the style.css file. All HTML references are the same and are as follows:
+* All media bootstrap containers, rows and columns instructed by [w3schools](https://www.w3schools.com/bootstrap/default.asp)
+* [Navbar](https://www.w3schools.com/Css/css_navbar_horizontal.asp) and [position](https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp)
+* [Making it stick](https://stackoverflow.com/questions/4455021/freeze-navbar-at-top-of-page) took instruction from this website from user Dstarh8
+* [Responsive carousel images](https://www.w3schools.com/bootstrap/bootstrap_images.asp), my own images and decoration were added by me 
+* [Coding the carousel us ing Bootstrap](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) was used to establish the bootstrap coding for the carousel
+* [Addition carousel coding tips](https://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/). By web developer George Martsouko was used to manipuate the position of the carousel to my liking.
+* ### Content: All content was written by the developer.
+* ### Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free.
+* ### Achknowledgments: To my mentor, code institute and my family for allowing this to be an enjoyable process.
 
 ## Please note:
 **I have not plagerised any of my work but instead foolishy got stuck into the project too soon without fully knowing how to commit to git, this was brought to the attention of code institure and i expressed my concerns. Ever since I have been commiting to the project properly, I have also referenced any code I thought may be from anyone elses work or website. I have put into my own word the deployment method taken from the file on READ.md - user centric frontend development module. Thank you.**
