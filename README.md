@@ -126,13 +126,15 @@ Also, the form will only be submitted when all fields are filled in appropriatel
 
 1. I Logged in to GitHub and located my GitHub Repository.
 2. Clicked on the repository "Settings" Button.
-3. Locate the "GitHub Pages" Section.
-Under "Source", click the dropdown called "None" and select "Master Branch".
-The page will automatically refresh.
-Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+3. Located the "GitHub Pages" Section.
+4. Under "Source", I clicked "None" and selected "Master Branch".
+5. The live URL was then presented after the page refreshed.
 
 ## Credits
 * Code: Special reference to those that allowed for easy application of the carousels and their respective images. [Sitepoint creator - George Martsoukos](http://www.sitepoint.com/full-screen-bootstrap-carousel-random-initial-image/)
 * Content: All content was written by the developer.
 * Media: All images were taken from [Pixabay](http://pixabay.com/), as they are royalty free.
 * Achknowledgments: To my mentor, code institute and my family for allowing this to be an enjoyable process.
+
+## Please note:
+**I have not plagerised any of my work but instead foolishy got stuck into the project too soon without fully knowing how to commit to git, this was brought to the attention of code institure and i expressed my concerns. Ever since I have been commiting to the project properly, I have also referenced any code I thought may be from anyone elses work or website. I have put into my own word the deployment method taken from the file on READ.md - user centric frontend development module. Thank you.**
