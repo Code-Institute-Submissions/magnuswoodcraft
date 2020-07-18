@@ -739,7 +739,7 @@ background-color: white;
 margin: 20px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border: 1px solid #c3a343;
-background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/vxUqtFk.jpg") no-repeat center center;
+background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/vxUqtFk.jpg?1") no-repeat center center;
 }
 
 /*Linear gradient of this hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
@@ -750,7 +750,7 @@ list-style-type: none;
 #project-info-text h2 {
 font-family: 'UnifrakturMaguntia', cursive;
 text-align: center;
-font-size: 5vw;
+font-size: 4vw;
 letter-spacing: 3px;
 color: #000000;
 padding: 10px;
@@ -770,7 +770,7 @@ font-size: 5vw;
 
 #project-info p {
     color: black;
-    font-size: 4vw;
+    font-size: 3vw;
     padding: 10px;
 }
 
