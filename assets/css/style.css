@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+JP&family=UnifrakturMaguntia&display=swap');
 
+/*All media bootstrap containers, rows and columns instructed by https://www.w3schools.com/bootstrap/default.asp, all images taken from Pixabay*/
 /* All fonts taken from Google fonts*/
 
 header {
@@ -105,7 +106,7 @@ font-size: 40px;
 
 /* Navbar code starts */
 
-/* code taken from....*/
+/*code taken from https://www.w3schools.com/Css/css_navbar_horizontal.asp and https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp*/
 
 header {
 margin-bottom: 20px;
@@ -161,7 +162,7 @@ font-size: 20px;
 /*https://stackoverflow.com/questions/4455021/freeze-navbar-at-top-of-page took instruction from this website from user Dstarh8*/
 /* end of navigation bar code */
 
-/* hero image and hero text */
+/* hero image and hero text inspired by the css3 web project by code institute*/
 
 h1 {
 font-family: 'UnifrakturMaguntia', cursive;
@@ -183,7 +184,7 @@ margin-top: 30px;
 margin-bottom: 30px;
 }
 
-
+/*some code for hero image taken from https://www.w3schools.com/howto/howto_css_hero_image.asp inspired by the web project from code institute*/
 .hero-image {
 background: url("https://i.imgur.com/vxUqtFk.jpg") no-repeat center center;
 height: 600px;
@@ -315,8 +316,8 @@ text-decoration: underline;
 padding-bottom: 10px;
 }
 
-/*https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
-
+/*underlines taken from https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+/*this section was taken from the club ethos section on the first web project from code institute*/
 #left {
 float: left;
 background-color: rgba(221, 172, 37, 0.2);
@@ -478,7 +479,7 @@ background-color: rgba(255, 255, 255, 0.5);
      padding-bottom: 0;
 }
 }
-
+/*alot of the code in this section was taken from https://www.w3schools.com/bootstrap/bootstrap_images.asp */
 #middle {
 position: relative;
 border: 1px solid black;
@@ -828,7 +829,7 @@ transform: scale(1.04);
      }
 }
 
-
+/*order form code used from https://www.w3schools.com/bootstrap/bootstrap_forms.asp*/
 #order-form {
 position: absolute;
 top: 30%;
@@ -969,7 +970,7 @@ min-width: 80px;
 /* https://www.w3schools.com/bootstrap4/bootstrap_forms.asp */
 
 /*This section codes for the thank.html page, this page exists solely for the submission button on the order.html page
-I was unsure how to make a php action response work for this so i improvised with a html file*/
+I was unsure how to make a php action response work for this so i improvised with a html file buttons taken from https://www.w3schools.com/bootstrap/bootstrap_buttons.asp*/
 
 .thank {
 padding-top: 0px;
